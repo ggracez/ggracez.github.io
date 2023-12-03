@@ -2,7 +2,7 @@
 my site!
 
 ## TODO
-- [ ] add projects
-- [ ] make dark mode default
+- [ ] update projects
+- [ ] make dark mode default/remember choice
 - [ ] mobile
 - [ ] change icon colours and hover

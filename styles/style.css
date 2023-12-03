@@ -43,8 +43,16 @@ a {
   transition: all 300ms ease;
 }
 
-.title {
+.title, .project-title {
   color: var(--bold-color);
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.tech-stack {
+  font-weight: 400;
 }
 
 a:hover {
@@ -69,8 +77,6 @@ a:hover {
 #about, #projects {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
   margin-top: 10vh;
 }
 
@@ -83,13 +89,9 @@ a:hover {
 
 .projects-text {
   text-align: left;
-  width: 35rem;
+  width: 40rem;
   display: block;
   margin-block-start: 1em;
-}
-
-.title {
-  font-size: 3rem;
 }
 
 #socials-container {
@@ -101,6 +103,25 @@ a:hover {
 .icon {
   cursor: pointer;
   height: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+}
+
+.project-img {
+  max-width: 40rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  border-radius: 5px;
+  background: var(--bold-color);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* DESKTOP NAV */
