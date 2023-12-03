@@ -2,13 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --text-color: #4c566a;
+  --background-color: #f2f4f8;
+  --bold-color: #2E3440;
+  --link-color: #81A1C1;
+}
+
+.dark-mode {
+  --text-color: #d8dee9;
+  --background-color: #292e39;
+  --bold-color: #eceff4;
+  --link-color: #81A1C1;
+}
+
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  transition: all 500ms;
 }
 
 html {
@@ -16,27 +33,40 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--text-color);
   font-weight: 500;
 }
 
 a {
-  color: black;
+  color: var(--bold-color);
   text-decoration: none;
   transition: all 300ms ease;
 }
 
+.title {
+  color: var(--bold-color);
+}
+
 a:hover {
-  color: #679fab;
+  color: var(--link-color);
+}
+
+#toggle {
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Old versions of Firefox */
+  user-select: none;
 }
 
 .logo {
   font-family: "Inter", sans-serif;
   font-size: 2rem;
   font-weight: 600;
+  color: var(--bold-color);
 }
 
-#about-section, #projects-section {
+#about, #projects {
   display: flex;
   justify-content: center;
   gap: 5rem;

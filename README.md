@@ -3,6 +3,6 @@ my site!
 
 ## TODO
 - [ ] add projects
-- [ ] actually make the link at the top work
-- [ ] dark mode
+- [ ] make dark mode default
 - [ ] mobile
+- [ ] change icon colours and hover
