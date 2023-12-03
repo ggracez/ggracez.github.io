@@ -74,10 +74,15 @@ a:hover {
   color: var(--bold-color);
 }
 
-#about, #projects {
+#about {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
 }
 
 .about-text {
