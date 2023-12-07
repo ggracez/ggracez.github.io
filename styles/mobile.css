@@ -1,10 +1,34 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   #desktop-nav {
     display: none;
   }
 
-  section {
-    height: fit-content;
-    margin: 0 5%;
+  .about-text, .title {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .details-container {
+    flex-wrap: wrap;
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    text-align: center;
+    margin: 0 5rem;
+  }
+
+  .projects-text, .tech-stack {
+    text-align: center;
+  }
+
+  .project-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #socials-container {
+    display: flex;
+    justify-content: center;
   }
 }

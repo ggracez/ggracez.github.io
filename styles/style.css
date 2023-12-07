@@ -110,7 +110,7 @@ a:hover {
 
 .projects-text {
   text-align: left;
-  width: 40rem;
+  max-width: 40rem;
   display: block;
   margin-block-start: 1em;
 }
