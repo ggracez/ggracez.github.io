@@ -43,6 +43,7 @@ function updateThemeOnHtmlEl({ theme }) {
 * 1. Grab what we need from the DOM and system settings on page load
 */
 const button = document.querySelector("[data-theme-toggle]");
+const buttonMobile = document.querySelector("[data-theme-toggle-mobile]");
 const localStorageTheme = localStorage.getItem("theme");
 const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -55,6 +56,7 @@ let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, sys
 * 3. Update the theme setting and button text according to current settings
 */
 updateButton({ buttonEl: button, isDark: currentThemeSetting === "dark" });
+updateButton({ buttonEl: buttonMobile, isDark: currentThemeSetting === "dark" });
 updateThemeOnHtmlEl({ theme: currentThemeSetting });
 
 /**
@@ -65,7 +67,27 @@ button.addEventListener("click", (event) => {
 
   localStorage.setItem("theme", newTheme);
   updateButton({ buttonEl: button, isDark: newTheme === "dark" });
+  updateButton({ buttonEl: buttonMobile, isDark: newTheme === "dark" });
+  updateThemeOnHtmlEl({ theme: newTheme });
+
+  currentThemeSetting = newTheme;
+});
+
+buttonMobile.addEventListener("click", (event) => {
+  const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+
+  localStorage.setItem("theme", newTheme);
+  updateButton({ buttonEl: button, isDark: newTheme === "dark" });
+  updateButton({ buttonEl: buttonMobile, isDark: newTheme === "dark" });
   updateThemeOnHtmlEl({ theme: newTheme });
 
   currentThemeSetting = newTheme;
 }); 
+
+
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-lines");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}

@@ -12,15 +12,28 @@
   <body>
     <nav id="desktop-nav">
       <div class="logo">grace<br>zhu</div>
-      
-      <!-- desktop nav -->
       <div>
         <ul class="nav-links">
           <li><a href="./index.html">About</a></li>
           <li><a href="./projects.html">Projects</a></li>
           <li data-theme-toggle aria-label="🌞" id="toggle">🌞</li>
-  </body>
         </ul>
+      </div>
+    </nav>
+
+    <nav id="mobile-nav">
+      <div class="logo">grace<br>zhu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-lines" onclick="toggleMenu()">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li data-theme-toggle-mobile aria-label="🌞" id="toggle">🌞</li>
+        </div>
       </div>
     </nav>
 

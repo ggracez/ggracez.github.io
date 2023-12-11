@@ -1,11 +1,25 @@
+@media screen and (min-width: 650px) {
+  #mobile-nav {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 650px) {
   #desktop-nav {
     display: none;
   }
 
+  .logo {
+    margin: 0;
+  }
+
   .about-text, .title {
     text-align: center;
     margin: 1rem;
+  }
+
+  .title {
+    margin-top: -1rem;
   }
 
   .details-container {

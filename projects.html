@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>grace zhu</title>
+    <title>grace zhu - projects</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
   </head>
@@ -18,6 +18,22 @@
           <li><a href="./projects.html">Projects</a></li>
           <li data-theme-toggle aria-label="🌞" id="toggle">🌞</li>
         </ul>
+      </div>
+    </nav>
+
+    <nav id="mobile-nav">
+      <div class="logo">grace<br>zhu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-lines" onclick="toggleMenu()">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="./projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li data-theme-toggle-mobile aria-label="🌞" id="toggle">🌞</li>
+        </div>
       </div>
     </nav>
 
